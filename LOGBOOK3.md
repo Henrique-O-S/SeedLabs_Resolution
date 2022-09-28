@@ -25,6 +25,6 @@
 
 <br>
 
-##CTF
-###Resolution
+## CTF
+### Resolution
 -In the rules section we copied the exemple flag as the solution.
