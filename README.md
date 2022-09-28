@@ -1,9 +1,8 @@
-
 Breve descrição do grupo
 
-* Turno: [LM]XX
-* Grupo: YY
+* Turno: [LM]02
+* Grupo: 02
 * Alunos:
-    - Aluno1 upZZZZZ 
-    - Aluno2 upZZZZZ
-    - Aluno3 upZZZZZ
+    - Henrique Silva up202007242
+    - Tiago Branquinho up202005567
+    - Francisco Serra up202007723
