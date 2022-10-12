@@ -6,11 +6,11 @@ nao ha diferenca pois o processo filho herdou as variaveis do pai
 ## Task 3
 We start by executing what is descripted in the guide:
 - Compile the file that includes the given program and execute it
-//insert task3-1
+- //insert task3-1
 Then we change one line on the myenv.c file as showned:
-//insert task3-2-1 and task3-2-2
+- //insert task3-2-1 and task3-2-2
 Lastly recompile this file and execute it
-//insert task3-2
+- //insert task3-2
 ## Task 6
 We start by executing what is descripted in the guide:
 - Compile the file that includes the given program
