@@ -1,4 +1,10 @@
 # Trabalho realizado na Semana #4
+## Task 1
+After opening a shell we type the command "printenv" and it shows all the environment variables:
+- ![Task1-1](/Images/Task1-1.png "Task1-1")
+
+Then we try a different command "export":
+- ![Task1-2](/Images/Task1-2.png "Task1-2")
 
 ## Task 2
 nao ha diferenca pois o processo filho herdou as variaveis do pai
@@ -6,13 +12,15 @@ nao ha diferenca pois o processo filho herdou as variaveis do pai
 ## Task 3
 We start by executing what is descripted in the guide:
 - Compile the file that includes the given program and execute it
-- //insert task3-1
+![Task3](/Images/Task3-1.png "Task3-1")
 
 Then we change one line on the myenv.c file as showned:
-- //insert task3-2-1 and task3-2-2
+- ![Task3-2-1](/Images/Task3-2-1.png "Task3-2-1")
+- ![Task3-2-2](/Images/Task3-2-2.png "Task3-2-2")
 
-Lastly recompile this file and execute it
-- //insert task3-2
+Lastly recompile this file and execute it:
+- ![Task3-2](/Images/Task3-2.png "Task3-2")
+
 ## Task 6
 We start by executing what is descripted in the guide:
 - Compile the file that includes the given program
