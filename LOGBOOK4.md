@@ -26,7 +26,7 @@ Which showed us that there are not any differences between the father and child 
 ## Task 3
 We start by executing what is descripted in the guide:
 - Compile the file that includes the given program and execute it
-![Task3](/Images/Task3-1.png "Task3-1")
+- ![Task3](/Images/Task3-1.png "Task3-1")
 
 Then we change one line on the myenv.c file as showned:
 - ![Task3-2-1](/Images/Task3-2-1.png "Task3-2-1")
