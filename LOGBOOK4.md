@@ -163,3 +163,4 @@ for i in range(3): # We need to try multiple timestamps as we don't get the exac
 ```
 Then ran it:
 
+![Command](/Images/CTF4/Command.jpeg "Users")
