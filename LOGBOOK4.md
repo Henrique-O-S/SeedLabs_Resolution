@@ -35,6 +35,11 @@ Then we change one line on the`myenv.c` file as showned:
 Lastly recompile this file and execute it:
 - ![Task3-2](/Images/Task3-2.png "Task3-2")
 
+## Task4 
+After creating the file with the given code, we compiled and executed it as showned:
+- `gcc task4.c -o task4`
+- `./task4`
+- ![Task4](/Images/Task4.png "Task4")
 ## Task 6
 We start by executing what is descripted in the guide:
 - Compile the file that includes the given program
