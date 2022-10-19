@@ -1,10 +1,10 @@
 # Trabalho realizado na Semana #4
 ## Task 1
 After opening a shell we type the command `printenv` and it shows all the environment variables:
-- ![Task1-1](/Images/Week4/Task1-1.png "Task1-1")
+- ![Task1-1](/Images/Task1-1.png "Task1-1")
 
 Then we try a different command `export`:
-- ![Task1-2](/Images/Week4/Task1-2.png "Task1-2")
+- ![Task1-2](/Images/Task1-2.png "Task1-2")
 
 ## Task 2
 We started by compiling `myprintenv.c` with 
@@ -19,27 +19,27 @@ After commenting out the `printenv()` statement in the child process case, and u
 
 This time we called the file `file2` so we could use the command 
 - `diff file file2`
-- ![Task2-3](/Images/Week4/Task2-3.png "Task2-3")
+- ![Task2-3](/Images/Task2-3.png "Task2-3")
 
 Which showed us that there are not any differences between the father and child variables because the child process inherited all his father's variables.
 
 ## Task 3
 We start by executing what is descripted in the guide:
 - Compile the file that includes the given program and execute it
-- ![Task3](/Images/Week4/Task3-1.png "Task3-1")
+- ![Task3](/Images/Task3-1.png "Task3-1")
 
 Then we change one line on the`myenv.c` file as showned:
-- ![Task3-2-1](/Images/Week4/Task3-2-1.png "Task3-2-1")
-- ![Task3-2-2](/Images/Week4/Task3-2-2.png "Task3-2-2")
+- ![Task3-2-1](/Images/Task3-2-1.png "Task3-2-1")
+- ![Task3-2-2](/Images/Task3-2-2.png "Task3-2-2")
 
 Lastly recompile this file and execute it:
-- ![Task3-2](/Images/Week4/Task3-2.png "Task3-2")
+- ![Task3-2](/Images/Task3-2.png "Task3-2")
 
 ## Task4 
 After creating the file with the given code, we compiled and executed it as showned:
 - `gcc task4.c -o task4`
 - `./task4`
-- ![Task4](/Images/Week4/Task4.png "Task4")
+- ![Task4](/Images/Task4.png "Task4")
 ## Task 6
 We start by executing what is descripted in the guide:
 - Compile the file that includes the given program
@@ -66,11 +66,11 @@ As the program is SET-UID and the program owner is the root, the program will ru
 
 - Wordpress version and plugins:
 
-![Recognition](/Images/Week4/CTF4/Recognition.PNG "Recognition")
+![Recognition](/Images/CTF4/Recognition.PNG "Recognition")
 
 - Possíveis utilizadores e nomes de utilizadores:
 
-![Users](/Images/Week4/CTF4/Users.PNG "Users")
+![Users](/Images/CTF4/Users.PNG "Users")
 
 #### Vulnerability choice
 
@@ -163,4 +163,12 @@ for i in range(3): # We need to try multiple timestamps as we don't get the exac
 ```
 Then ran it:
 
-![Command](/Images/Week4/CTF4/Command.jpeg "Users")
+![Command](/Images/CTF4/Command.jpeg "Users")
+
+After clicking in the first link we were logged in the admin account:
+
+[Success](/Images/CTF4/Success.jpeg "Success")
+
+Finally we accessed the link http://ctf-fsi.fe.up.pt:5001/wp-admin/edit.php and took the flag:
+
+[Flag](/Images/CTF4/Flag.jpeg "Flag")
