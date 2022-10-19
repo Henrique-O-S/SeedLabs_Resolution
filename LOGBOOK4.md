@@ -43,14 +43,11 @@ We start by executing what is descripted in the guide:
 - Make the program a SET-UID program by using `chmod u+s <filepath/filename>`
 - Logout to a common user using `logout`
 
-Now we can run malicious code by creating a new ls command and changing the PATH variables to lead to it instead of the original /bin/ls:
-- Create a new .sh file with a function in it:
-
-Per example,
+Now we can run malicious code by replacing the ls command and or by redirecting the shell program to execute another malicious command named cmd, per example:
 "#!/bin/bash
 
 function ls() {
   echo 'You have been hacked!'
 }"
-- Open ~/.bashrc using any text editor
-- Add the following command `source <filepath/filename>
+
+As the program is SET-UID and the program owner is the root, the program will run with root privileges, accounting that /bin/sh links to /bin/zsh instead of /bin/dash, so the `sudo ln -sf /bin/zsh /bin/sh` is needed.
