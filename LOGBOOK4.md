@@ -69,3 +69,5 @@ As the program is SET-UID and the program owner is the root, the program will ru
 ![Recognition](/Images/CTF4/Recognition.PNG "Recognition")
 
 - Possíveis utilizadores e nomes de utilizadores:
+
+![Users](/Images/CTF4/Users.PNG "Users")
