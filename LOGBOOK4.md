@@ -66,6 +66,6 @@ As the program is SET-UID and the program owner is the root, the program will ru
 
 - Wordpress version and plugins:
 
-![Recognition](/Images/CTF4/Recognition.png "Recognition")
+![Recognition](/Images/CTF4/Recognition.PNG "Recognition")
 
 - Possíveis utilizadores e nomes de utilizadores:
