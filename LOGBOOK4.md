@@ -40,6 +40,17 @@ After creating the file with the given code, we compiled and executed it as show
 - `gcc task4.c -o task4`
 - `./task4`
 - ![Task4](/Images/Week4/Task4.png "Task4")
+
+## Task 5
+After creating the file with the given code, we compiled it and executed the following commands:
+- `gcc task5.c -o task5`
+- `sudo chown root task5`
+- `sudo chown 4755 task5`
+- `export LD_LIBRARY_PATH=0`
+- `export ANY_NAME=A`
+
+With this the new variables are presented when we run `./task5`
+
 ## Task 6
 We start by executing what is descripted in the guide:
 - Compile the file that includes the given program
