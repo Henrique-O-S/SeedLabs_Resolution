@@ -48,6 +48,7 @@ After creating the file with the given code, we compiled it and executed the fol
 - `sudo chown 4755 task5`
 - `export LD_LIBRARY_PATH=0`
 - `export ANY_NAME=A`
+
 With this the new variables are presented when we run `./task5`
 
 ## Task 6
