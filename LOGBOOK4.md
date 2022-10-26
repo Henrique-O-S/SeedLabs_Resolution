@@ -66,7 +66,7 @@ function ls() {
   echo 'You have been hacked!'
 }"
 
-![Hack](/Images/Week4/Hack.png "Hack")
+![Hack](/Images/Week4/Hack.PNG "Hack")
 
 As the program is SET-UID and the program owner is the root, the program will run with root privileges, accounting that /bin/sh links to /bin/zsh instead of /bin/dash, so the `sudo ln -sf /bin/zsh /bin/sh` is needed.
 
