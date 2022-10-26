@@ -18,3 +18,5 @@ Then we compile the program stack.c using `gcc -DBUF_SIZE=100 -m32 -o stack -z e
 
 Now we can run the program using `stack.c` and check it is indeed a root-owned Set-UID program using `ls -l stack`.
 
+- ![Task2](/Images/Week5/Task2.PNG "Task2")
+
