@@ -27,15 +27,18 @@ In buffer overflow vulnerabilities, its very important to to know the difference
 Firstly, we created a file named badfile, by executing the following command
 - `touch badfile`
 
-- ![Task3](/Images/Week5/first.png "first step")
-
 After that, while in the sub directory 'code', we launched gbd, targeting 'stack-L1-dbg'
+
+- ![Task3](/Images/Week5/first.png "first step")
 
 Then, by running the following command, we created a breakpoint in the `bof` function
 - `b bof`
 
 
-In order to print that function's epb, we need to run the command `next`, otherwise we would be refering to the callers epb
+In order to print that function's epb, we need to run the command `next`,after `run` , otherwise we would be refering to the caller's epb
+
+- ![Task3](/Images/Week5/b bof run.png "break point and run")
+
 
 After that we run the following command to get the epb value:
 - `p $epb`
@@ -45,10 +48,11 @@ Then, the following command to get the buffer's address:
 
 Finally, we can quit, using the `quit` command
 
+- ![Task3](/Images/Week5/p adress "getting addresses")
+
 After understanding how this works, we need to fill a pyhton script in order to make the attack:
 
-
-
+- ![Task3](/Images/Week5/py "python file")
 
 
 The filled information:
@@ -62,10 +66,19 @@ The filled information:
  - After this we just need to run the exploit, by running the .py file, followed by the stack-L1 program. That enables us to have root access.
 
 
+- ![Task3](/Images/Week5/final "run the exploit")
+
+
 
  ## CTF 1
 
  - We saw that the buffer had a size of 20 bytes, but the program was reading 28. So, we just sended 20 bytes of random characters, followed by the file we wanted to print, "flag.txt"
+
+- ![Task3](/Images/Week5/ctf "main.c")
+
+
+- ![Task3](/Images/Week5/bb "ctf1")
+
 
 
 
@@ -74,6 +87,11 @@ The filled information:
 
  - This one is simillar to the last one. The only thing that changes is that `val` needs to be equal to 0xFEFC2223
  - We figured the last 8 characters were reserved to the file name, and the 8 characters before that represented the `val`.
+
+
+- ![Task3](/Images/Week5/ctf7 "main.c")
+
+- ![Task3](/Images/Week5/cf8 "ctf2")
 
 
 
