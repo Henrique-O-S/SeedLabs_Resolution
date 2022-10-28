@@ -52,7 +52,7 @@ Finally, we can quit, using the `quit` command
 
 After understanding how this works, we need to fill a pyhton script in order to make the attack:
 
-- ![Task3](/Images/Week5/py "python file")
+- ![Task3](/Images/Week5/py.png "python file")
 
 
 The filled information:
@@ -66,7 +66,7 @@ The filled information:
  - After this we just need to run the exploit, by running the .py file, followed by the stack-L1 program. That enables us to have root access.
 
 
-- ![Task3](/Images/Week5/final "run the exploit")
+- ![Task3](/Images/Week5/final.png "run the exploit")
 
 
 
@@ -74,10 +74,10 @@ The filled information:
 
  - We saw that the buffer had a size of 20 bytes, but the program was reading 28. So, we just sended 20 bytes of random characters, followed by the file we wanted to print, "flag.txt"
 
-- ![Task3](/Images/Week5/ctf "main.c")
+- ![Task3](/Images/Week5/ctf.png "main.c")
 
 
-- ![Task3](/Images/Week5/bb "ctf1")
+- ![Task3](/Images/Week5/bb.png "ctf1")
 
 
 
@@ -89,9 +89,11 @@ The filled information:
  - We figured the last 8 characters were reserved to the file name, and the 8 characters before that represented the `val`.
 
 
-- ![Task3](/Images/Week5/ctf7 "main.c")
+- ![Task3](/Images/Week5/ctf7.png "main.c")
 
-- ![Task3](/Images/Week5/cf8 "ctf2")
+- ![Task3](/Images/Week5/ctf5.png "py script")
+
+- ![Task3](/Images/Week5/cf8.png "ctf2")
 
 
 
