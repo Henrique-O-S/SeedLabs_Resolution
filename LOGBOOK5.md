@@ -27,6 +27,8 @@ In buffer overflow vulnerabilities, its very important to to know the difference
 Firstly, we created a file named badfile, by executing the following command
 - `touch badfile`
 
+- ![Task2](/Images/Week5/first.PNG "first step")
+
 After that, while in the sub directory 'code', we launched gbd, targeting 'stack-L1-dbg'
 
 Then, by running the following command, we created a breakpoint in the `bof` function
