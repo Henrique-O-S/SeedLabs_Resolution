@@ -48,7 +48,7 @@ Then, the following command to get the buffer's address:
 
 Finally, we can quit, using the `quit` command
 
-- ![Task3](/Images/Week5/p adress "getting addresses")
+- ![Task3](/Images/Week5/p adress.png "getting addresses")
 
 After understanding how this works, we need to fill a pyhton script in order to make the attack:
 
@@ -89,11 +89,11 @@ The filled information:
  - We figured the last 8 characters were reserved to the file name, and the 8 characters before that represented the `val`.
 
 
-- ![Task3](/Images/Week5/ctf7.png "main.c")
+- ![Task3](/Images/Week5/ctf 7.png "main.c")
 
-- ![Task3](/Images/Week5/ctf5.png "py script")
+- ![Task3](/Images/Week5/ctf 5.png "py script")
 
-- ![Task3](/Images/Week5/cf8.png "ctf2")
+- ![Task3](/Images/Week5/ctf 8.png "ctf2")
 
 
 
