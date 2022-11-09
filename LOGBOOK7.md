@@ -9,7 +9,7 @@ After having the servers up and running we can now interact with them.
 - To test the server first we print a simple message such as
 - `echo hello | nc 10.9.0.5 9090`
 - The result is the following:
-- insert image with server response
+- ![Hello](/Images/Week7/Task1-hello.png "hello")
 <br>
 Then we run build_string.py (`python3 build_string.py`)to create a set of big strings so it´s easier for us to attack the server.
 <br>
