@@ -54,6 +54,6 @@ Compile the python script and run the program using the generated file as input.
 
 Check the secret message printed on the server side.
 
-- ![Resul2t](/Images/Week7/Task2.2-result2.PNG "Result2")
+- ![Result2](/Images/Week7/Task2.2-result2.PNG "Result2")
 
 ## Task 3
