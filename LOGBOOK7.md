@@ -16,7 +16,7 @@ Then we run build_string.py (`python3 build_string.py`)to create a set of big st
 The result is a binary file (badfile) with 1500 bytes worth of strings that we'll use to atack the server.
 
 - To execute the atack we run `cat badfile | nc 10.9.0.5 9090` and the result in the server side will show us that we were able to kill the parent process:
-- insert image with server response from atack
+- ![Server_down](/Images/Week7/Task1-server-down.png "Server_down")
 
 - As we can see the server doesn't return "(ˆ_ˆ)(ˆ_ˆ) Returned properly (ˆ_ˆ)(ˆ_ˆ)", therefore we can be sure the server was properly attacked.
 
