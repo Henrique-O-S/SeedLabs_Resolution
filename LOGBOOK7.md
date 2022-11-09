@@ -11,7 +11,7 @@ After having the servers up and running we can now interact with them.
 - The result is the following:
 - ![Hello](/Images/Week7/Task1-hello.png "hello")
 <br>
-Then we run build_string.py (`python3 build_string.py`)to create a set of big strings so it´s easier for us to attack the server.
+Then we run build_string.py `python3 build_string.py` to create a set of big strings so it´s easier for us to attack the server.
 <br>
 The result is a binary file (badfile) with 1500 bytes worth of strings that we'll use to atack the server.
 
