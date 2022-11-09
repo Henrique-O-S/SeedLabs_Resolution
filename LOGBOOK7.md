@@ -28,6 +28,20 @@ The result is a binary file (badfile) with 1500 bytes worth of strings that we'l
 
 ## Task 2
 
+### Task 2.A
 
+Start by creating a string that will return you the 4 first bytes of your input using a python script. In this case 64 `%x` were needed.
+
+- ![String](/Images/Week7/Task2.1-string.PNG "String")
+
+Compile the python script and run the program using the generated file as input.
+
+- ![Run](/Images/Week7/Task2.1-run.PNG "Run")
+
+Check the result on the server side.
+
+- ![Result](/Images/Week7/Task2.1-result.PNG "Result")
+
+### Task 2.B
 
 ## Task 3
