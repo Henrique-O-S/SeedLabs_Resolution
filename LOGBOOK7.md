@@ -10,15 +10,17 @@ After having the servers up and running we can now interact with them.
 - `echo hello | nc 10.9.0.5 9090`
 - The result is the following:
 - ![Hello](/Images/Week7/Task1-hello.png "hello")
+
+
+
+Then we run build_string.py `python3 build_string.py`to create a set of big strings so it´s easier for us to attack the server.
 <br>
-Then we run build_string.py `python3 build_string.py` to create a set of big strings so it´s easier for us to attack the server.
 <br>
-<br>
-The result is a binary file (badfile) with 1500 bytes worth of strings that we'll use to atack the server.
+The result is a binary file (badfile) with 1500 bytes worth of strings that we'll use to attack the server.
 <br>
 <br>
 
-- To execute the atack we run `cat badfile | nc 10.9.0.5 9090` and the result in the server side will show us that we were able to kill the parent process:
+- To execute the attack we run `cat badfile | nc 10.9.0.5 9090` and the result in the server side will show us that we were able to kill the parent process:
 - ![Server_down](/Images/Week7/Task1-server-down.png "Server_down")
 
 - As we can see the server doesn't return "(ˆ_ˆ)(ˆ_ˆ) Returned properly (ˆ_ˆ)(ˆ_ˆ)", therefore we can be sure the server was properly attacked.
