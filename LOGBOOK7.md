@@ -46,14 +46,14 @@ Check the result on the server side.
 
 Following the previous task alter the script so that the last four bytes are printed in string format.
 
-- ![String2](/Images/Week7/Task2.1-string2.PNG "String2")
+- ![String2](/Images/Week7/Task2.2-string2.PNG "String2")
 
 Compile the python script and run the program using the generated file as input.
 
-- ![Run2](/Images/Week7/Task2.1-run2.PNG "Run2")
+- ![Run2](/Images/Week7/Task2.2-run2.PNG "Run2")
 
 Check the secret message printed on the server side.
 
-- ![Resul2t](/Images/Week7/Task2.1-result2.PNG "Result2")
+- ![Resul2t](/Images/Week7/Task2.2-result2.PNG "Result2")
 
 ## Task 3
