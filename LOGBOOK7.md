@@ -57,3 +57,19 @@ Check the secret message printed on the server side.
 - ![Result2](/Images/Week7/Task2.2-result2.PNG "Result2")
 
 ## Task 3
+
+### Task 3.A
+
+Start by creating a string where the first 4 bytes are the target's address and so that the format specifier that overwrites the return address is `%n`. 
+
+- ![String3](/Images/Week7/Task3.1-string3.PNG "String3")
+
+Compile the python script and run the program using the generated file as input.
+
+- ![Run3](/Images/Week7/Task3.1-run3.PNG "Run3")
+
+The new content of the target's address printed on the server side should now be 0x000000cc. When converted to decimal it equals 204, which is the number of bytes that preceed the `%n` format specifier.
+
+- ![Result3](/Images/Week7/Task3.1-result3.PNG "Result3")
+
+### Task 3.B
