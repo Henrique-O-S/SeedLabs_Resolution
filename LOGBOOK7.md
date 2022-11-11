@@ -30,7 +30,7 @@ The result is a binary file (badfile) with 1500 bytes worth of strings that we'l
 
 ### Task 2.A
 
-Start by creating a string that will return you the 4 first bytes of your input using a python script. In this case 64 `%x` were needed.
+Start by creating a string that will return the 4 first bytes of your input using a python script. The last format specifier should overwite the return address so in this case 64 `%x` were needed.
 
 - ![String](/Images/Week7/Task2.1-string.PNG "String")
 
@@ -44,7 +44,7 @@ Check the result on the server side.
 
 ### Task 2.B
 
-Following the previous task alter the script so that the last four bytes are printed in string format.
+Following the previous task, alter the script so that the last four bytes are printed in string format. To do that the format specifier that overwrites the return address should be `%s`.
 
 - ![String2](/Images/Week7/Task2.2-string2.PNG "String2")
 
