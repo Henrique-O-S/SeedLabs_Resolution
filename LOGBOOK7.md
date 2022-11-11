@@ -30,7 +30,7 @@ The result is a binary file (badfile) with 1500 bytes worth of strings that we'l
 
 ### Task 2.A
 
-Start by creating a string that will return the 4 first bytes of your input using a python script. The last format specifier should overwite the return address so in this case 64 `%x` were needed.
+Start by creating a string that will return the 4 first bytes of your input using a python script. The last format specifier should overwite the return address content so in this case 64 `%x` were needed.
 
 - ![String](/Images/Week7/Task2.1-string.PNG "String")
 
@@ -44,7 +44,7 @@ Check the result on the server side.
 
 ### Task 2.B
 
-Following the previous task, alter the script so that the last four bytes are printed in string format. To do that the format specifier that overwrites the return address should be `%s`.
+Following the previous task, alter the script so that the last four bytes are printed in string format. To do that the format specifier that overwrites the return address content should be `%s`.
 
 - ![String2](/Images/Week7/Task2.2-string2.PNG "String2")
 
@@ -60,7 +60,7 @@ Check the secret message printed on the server side.
 
 ### Task 3.A
 
-Start by creating a string where the first 4 bytes are the target's address and so that the format specifier that overwrites the return address is `%n`. 
+Start by creating a string where the first 4 bytes are the target's address and, so that the format specifier that overwrites the return address content is `%n`. 
 
 - ![String3](/Images/Week7/Task3.1-string3.PNG "String3")
 
@@ -73,3 +73,15 @@ The new content of the target's address printed on the server side should now be
 - ![Result3](/Images/Week7/Task3.1-result3.PNG "Result3")
 
 ### Task 3.B
+
+Start by creating a string where the first 4 bytes are the target's address and, so that the format specifier that overwrites the return address content is `%n`. Wanting to change the content to 0x00005000, there should be 20480 bytes before the final format specifier.
+
+- ![String4](/Images/Week7/Task3.2-string4.PNG "String4")
+
+Compile the python script and run the program using the generated file as input.
+
+- ![Run4](/Images/Week7/Task3.2-run4.PNG "Run4")
+
+The new content of the target's address printed on the server side should now be 0x00005000.
+
+- ![Result4](/Images/Week7/Task3.2-result4.PNG "Result4")
