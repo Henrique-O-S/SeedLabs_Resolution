@@ -85,3 +85,37 @@ Compile the python script and run the program using the generated file as input.
 The new content of the target's address printed on the server side should now be 0x00005000.
 
 - ![Result4](/Images/Week7/Task3.2-result4.PNG "Result4")
+
+## CTFs
+
+### CTF 1
+
+This CTF is about string formats. 
+
+After analysing the `.c` file, whe realized that there is a `printf` without the format specified - that occurs on line 27.
+
+- ![main](/Images/Week7/ctf1-main.png "main")
+
+Using the `checksec program` command, we can verify that there is not PIE, so the binary positions are not randomized.
+
+- ![checksec](/Images/Week7/ctf1-checksec.png "checksec")
+
+The way to solve this consists in these steps:
+- Get the `flag` address using `gdb`.
+- Use that printf to print the string stored in that memory address.
+
+- ![gdb](/Images/Week7/ctf1-gdb.png "gdb")
+
+The `flag` address is `0x804c060`.
+
+Send the command `\x60\xc0\x04\x08%s` via the python script in order to print the value in that address in string format `%s`.
+
+- ![script](/Images/Week7/ctf1-script.png "script")
+
+After compiling the script the flag is ours.
+
+- ![final](/Images/Week7/ctf1-final.png "final")
+
+
+
+
