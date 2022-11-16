@@ -116,6 +116,30 @@ After compiling the script the flag is ours.
 
 - ![final](/Images/Week7/ctf1-final.png "final")
 
+### CTF 2
 
+This CTF is also about string formats, but it is more difficult than the previous one.
 
+After analysing the `.c` file, whe realized that there is a `printf` without the format specified - that occurs on line 14.
+Also, the `key` buffer needs to hold the value of `0xBEEF`.
+
+- ![main](/Images/Week7/ctf2-main.png "main")
+
+Using the `checksec program` command, we can verify that there is not PIE, so the binary positions are not randomized.
+
+- ![checksec](/Images/Week7/ctf2-checksec.png "checksec")
+
+The way to solve this consists in these steps:
+- Get the `key` address using `gdb`.
+- Use that printf to inject values in the memory address where the `key` is stored.
+
+- ![gdb](/Images/Week7/ctf2-gdb.png "gdb")
+
+The `flag` address is `0x804c060sdgdf`.
+
+Send the command `????\x34\xC0\x04\x08%.48871x%n` via the python script in order to inject the value `0xBEEF` in that memory address.
+
+- Using the `%.Ax%n` command, we are injecting the written values in the address previously typed.
+
+- 4 `?` were typed in order to navigate through the stack. That allows us to get to the start of the `key` buffer.
 
