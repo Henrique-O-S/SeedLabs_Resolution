@@ -133,13 +133,24 @@ The way to solve this consists in these steps:
 - Get the `key` address using `gdb`.
 - Use that printf to inject values in the memory address where the `key` is stored.
 
-- ![gdb](/Images/Week7/ctf2-gdb.png "gdb")
+![gdb](/Images/Week7/ctf2-gdb.png "gdb")
 
-The `flag` address is `0x804c060sdgdf`.
+The `flag` address is `0x804c034`.
 
 Send the command `????\x34\xC0\x04\x08%.48871x%n` via the python script in order to inject the value `0xBEEF` in that memory address.
 
-- Using the `%.Ax%n` command, we are injecting the written values in the address previously typed.
+![script](/Images/Week7/ctf2-script.png "script")
 
-- 4 `?` were typed in order to navigate through the stack. That allows us to get to the start of the `key` buffer.
+Using the `%.Ax%n` command, we are injecting the written values in the address previously typed. 
+
+The `key` buffer needs to hold the value of `0xBEEF`, which is equal to `48879`.
+
+We will inject the value `A = 48871`, which is 48879-8, since we need to subtract the already written bytes.
+
+4 `?` were typed in order to navigate through the stack. That allows us to get to the start of the `key` buffer.
+
+After successfully changing the value of the `key` buffer, we can access the flag by executing the script.
+
+![final](/Images/Week7/ctf2-final.png "final")
+
 
