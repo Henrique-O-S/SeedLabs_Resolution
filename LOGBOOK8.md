@@ -20,6 +20,10 @@
 - And the result is :
 - ![Task2-1-2](/Images/Week8/Task2-1-2.png "Task2-1-2")
 
+### Task 3
+#### 3.1
+query para phone number
+9111', salary=50000 WHERE ID=$id;-- ";
 ## CTF 1
 - Since we have access to the file index.php it's easier to notice the vulnerability inside the login query and try to control it.
 - As done in the lab we'll use the `admin';--` as the username inside the website.
