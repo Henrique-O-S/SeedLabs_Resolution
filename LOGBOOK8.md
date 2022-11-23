@@ -7,7 +7,7 @@
 - On the containers shell we will start using all databases associated with the user root `mysql -u root -pdees`.
 - Now that we're using mysql we'll need to load the sqllab_users database with `use sqllab_users`.
 - To show the database we can run `show tables`.
-Insert image
+- ![Task1](/Images/Week8/Task1.png "Task1")
 
 ctf semana 8 desafio 1
 
