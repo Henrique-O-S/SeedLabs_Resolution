@@ -10,7 +10,8 @@
 - ![Task1](/Images/Week8/Task1.png "Task1")
 
 
-### Task2
+### Task 2
+#### 2.1
 - In a browser we open www.seed-server.com and now we need to access the admin account.
 - Inside the "unsafe home.php" file we could find a vulnerability in the way the query was made.
 - Since we know the account name is "admin" we can use a very common sql injection `admin'-- ";`
