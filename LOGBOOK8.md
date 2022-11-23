@@ -24,4 +24,6 @@
 - Since we have access to the file index.php it's easier to notice the vulnerability inside the login query and try to control it.
 - As done in the lab we'll use the `admin';--` as the username inside the website.
 - `admin` is the account name, `'` is used to end the input of that sql field, `;` ends the line in php, `-- ` will comment all sql code afterwards.
+- ![CTF8.1](/Images/Week8/CTF8.1.png "CTF8.1")
+- And so we have the flag.
 
