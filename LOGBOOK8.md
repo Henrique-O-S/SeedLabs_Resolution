@@ -20,6 +20,16 @@
 - And the result is :
 - ![Task2-1-2](/Images/Week8/Task2-1-2.png "Task2-1-2")
 
+### 2.2
+- `curl 'www.seed-server.com/unsafe_home.php?username=admin%27--%20%22%3B&Password=11'`
+
+
+#### 2.3
+- In the username field we inserted the following command `admin'; DELETE FROM credential WHERE name='Alice' ";#`
+- In kind of injection doesn't work since the API used in the .php file is my `mysqli`. The `querry` command only allows single querries.
+
+Inserir imagem
+
 ### Task 3
 #### 3.1
 query para phone number
