@@ -20,10 +20,8 @@
 - And the result is :
 - ![Task2-1-2](/Images/Week8/Task2-1-2.png "Task2-1-2")
 
+## CTF 1
+- Since we have access to the file index.php it's easier to notice the vulnerability inside the login query and try to control it.
+- As done in the lab we'll use the `admin';--` as the username inside the website.
+- `admin` is the account name, `'` is used to end the input of that sql field, `;` ends the line in php, `-- ` will comment all sql code afterwards.
 
-ctf semana 8 desafio 1
-
-depois de ver o codigo do index.php reparamos que a query de login estava insegura e que seria por ali a entrada maliciosa no website. 
-
-username = admin';--
-admin para entrar com a conta dele, ' para fechar o parametro do php, ; para acabar a linha de php e -- para comentar o codigo sql
