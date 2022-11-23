@@ -9,6 +9,17 @@
 - To show the database we can run `show tables`.
 - ![Task1](/Images/Week8/Task1.png "Task1")
 
+
+### Task2
+- In a browser we open www.seed-server.com and now we need to access the admin account.
+- Inside the "unsafe home.php" file we could find a vulnerability in the way the query was made.
+- Since we know the account name is "admin" we can use a very common sql injection `admin'-- ";`
+- `admin` is the account name, `'` is used to end the input of that sql field, `-- ` will comment all sql code afterwards, `"` will end the string in php and `;` end the line in php.
+- ![Task2-1-1](/Images/Week8/Task2-1-1.png "Task2-1-1")
+- And the result is :
+- ![Task2-1-2](/Images/Week8/Task2-1-2.png "Task2-1-2")
+
+
 ctf semana 8 desafio 1
 
 depois de ver o codigo do index.php reparamos que a query de login estava insegura e que seria por ali a entrada maliciosa no website. 
