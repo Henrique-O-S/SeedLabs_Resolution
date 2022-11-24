@@ -14,6 +14,7 @@
 #### 2.1
 - In a browser we open www.seed-server.com and now we need to access the admin account.
 - Inside the "unsafe home.php" file we could find a vulnerability in the way the query was made.
+- INSERIR FOTO DA QUERY PARA DAR LOGIN
 - Since we know the account name is "admin" we can use a very common sql injection `admin'-- ";`
 - `admin` is the account name, `'` is used to end the input of that sql field, `-- ` will comment all sql code afterwards, `"` will end the string in php and `;` end the line in php.
 - ![Task2-1-1](/Images/Week8/Task2-1-1.png "Task2-1-1")
@@ -42,6 +43,10 @@
 
 ### Task 3
 #### 3.1
+
+- The following code to update the user info in the `unsafe_edit_backend.php` file is vulnerable
+- ![task3-1-code](/Images/Week8/task3-1-code.png "task3-1-code")
+
 - We inserted the command `9111', salary=50000 WHERE Name='Alice';-- ";` in the phone number section of the edit profile.
 - ![task3-1-init](/Images/Week8/task3-1-init.png "task3-1-init")
 - After that, we can verify Alice's salary has changed.
@@ -59,6 +64,10 @@
 ### 3.3
 
 - The passwords on this server are encrypted via SHA1
+
+- ![task3-3-init](/Images/Week8/task3-3-init.png "task3-3-init")
+
+
 
 - We altered Boby's password to `7110eda4d09e062aa5e4a390b0a572ac0d2c0220`, which is the equivalent of `SHA1('1234')`.
 
