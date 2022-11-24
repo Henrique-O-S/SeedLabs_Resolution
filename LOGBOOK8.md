@@ -14,7 +14,7 @@
 #### 2.1
 - In a browser we open www.seed-server.com and now we need to access the admin account.
 - Inside the "unsafe home.php" file we could find a vulnerability in the way the query was made.
-- INSERIR FOTO DA QUERY PARA DAR LOGIN
+- ![task2-1](/Images/Week8/task2-1.png "task2-1")
 - Since we know the account name is "admin" we can use a very common sql injection `admin'-- ";`
 - `admin` is the account name, `'` is used to end the input of that sql field, `-- ` will comment all sql code afterwards, `"` will end the string in php and `;` end the line in php.
 - ![Task2-1-1](/Images/Week8/Task2-1-1.png "Task2-1-1")
