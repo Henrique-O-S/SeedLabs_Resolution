@@ -8,6 +8,8 @@
 - Now that we're using mysql we'll need to load the sqllab_users database with `use sqllab_users`.
 - To show the database we can run `show tables`.
 - ![Task1](/Images/Week8/Task1.png "Task1")
+- To have Alice's information we run `SELECT * FROM credential WHERE name="ALICE";`
+-
 
 
 ### Task 2
