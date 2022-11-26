@@ -9,7 +9,7 @@
 - To show the database we can run `show tables`.
 - ![Task1](/Images/Week8/Task1.png "Task1")
 - To have Alice's information we run `SELECT * FROM credential WHERE name="ALICE";`
--
+- ![Alice](/Images/Week8/AliceInformation.png "Alice")
 
 
 ### Task 2
