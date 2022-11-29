@@ -56,9 +56,9 @@ This time we haven't got access to the code, but we realized we could access the
 
 - That was done by writing `google.com; ls` in the input field
 
-- ![ctf10-2-4](/Images/Week10/ctf-10-2-4.png "ctf10-2-4"
+- ![ctf10-2-4](/Images/Week10/ctf-10-2-4.png "ctf10-2-4")
 
-- After seing the end of the results, we concluded that trying to `run several commands at once works`
+- After seing that the end of the result matched with the `ls` command sent through the input field, we concluded that `running several commands at once works`
 
 - So we wrote `google.com; cat /flags/flag.txt` in the input field, since we knew the `path` to the flag
 
