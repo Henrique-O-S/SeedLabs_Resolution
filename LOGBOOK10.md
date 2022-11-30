@@ -2,10 +2,17 @@
 After having the servers up and running we can now interact with them. 
 Firstly we need to login into one of the accounts. In this case we choose Samy.
 Then we can edit our profile to add a malicious script:
-- ![script](/Images/Week10/Task1-script.PNG "script")
+- ![script1](/Images/Week10/Task1-script.PNG "script1")
 
 Now, as soon as any user enters Samy's profile, the script will be executed:
-- ![result](/Images/Week10/Task1-result.PNG "result")
+- ![result1](/Images/Week10/Task1-result.PNG "result1")
+
+## Task 2
+For the second task we need to modify the first task's script to the following:
+- ![script2](/Images/Week10/Task2-script.PNG "script2")
+
+Now, as soon as any user enters Samy's profile, the script will be executed and the user's cookies will be displayed in the alert window:
+- ![result2](/Images/Week10/Task2-result.PNG "result2")
 
 ## CTFs
 
