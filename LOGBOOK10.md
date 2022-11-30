@@ -1,3 +1,11 @@
+## Task 1
+After having the servers up and running we can now interact with them. 
+Firstly we need to login into one of the accounts. In this case we choose Samy.
+Then we can edit our profile to add a malicious script:
+- ![script](/Images/Week10/Task1-script.PNG "script")
+
+Now, as soon as any user enters Samy's profile, the script will be executed:
+- ![result](/Images/Week10/Task1-result.PNG "result")
 
 ## CTFs
 
