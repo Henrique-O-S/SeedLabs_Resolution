@@ -24,6 +24,19 @@ Now, before we visit Samy's profile we need to setup a listener that prints out 
 After this, as soon as any user enters Samy's profile, the script will be executed and the user's cookies will be displayed in the attacker's terminal:
 - ![result3](/Images/Week10/Task3-result.PNG "result3")
 
+## Task 4
+For the fourth task we need to identify the requets message sent from the browser to the server when adding Samy as a friend legitimately. For that we can use Firefox's HTTP inspection tool while we add Samy logged in as Charlie, per example:
+- ![add-friend-request4](/Images/Week10/Task4-add-friend-request.PNG "add-friend-request4")
+
+After finding out the response parameters we can now construct the message to be sent to server by our malicous script, that will be added to the about me field in Samy's account using Text mode:
+- ![script4](/Images/Week10/Task4-script.PNG "script4")
+
+After we plant the script we can login as another user, per example Alice. If we go to Samy's page we can confirm that the button to add him as a friend hasn't been pressed:
+- ![samy-page4](/Images/Week10/Task4-samy-page.PNG "samy-page4")
+
+However, if we check Alice's friends we will find Samy was added:
+- ![alice-friends4](/Images/Week10/Task4-alice-friends.PNG "alice-friends4")
+
 ## CTFs
 
 ### CTF1
