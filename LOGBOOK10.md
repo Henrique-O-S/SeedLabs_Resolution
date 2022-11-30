@@ -19,7 +19,7 @@ For the third task we need to modify the previous task's script to the following
 - ![script3](/Images/Week10/Task3-script.PNG "script3")
 
 Now, before we visit Samy's profile we need to setup a listener that prints out whatever is sent by the client:
-- ![result3](/Images/Week10/Task3-result.PNG "result3")
+- ![listener3](/Images/Week10/Task3-listener.PNG "listener3")
 
 After this, as soon as any user enters Samy's profile, the script will be executed and the user's cookies will be displayed in the attacker's terminal:
 - ![result3](/Images/Week10/Task3-result.PNG "result3")
