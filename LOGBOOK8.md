@@ -93,3 +93,40 @@
 - ![CTF8.1](/Images/Week8/CTF8.1.png "CTF8.1")
 - And so we have the flag.
 
+## CFT 2
+
+- Firstly we ran the `checksec` command in order to see the `protections` of the executable file.
+
+- ![ctf-8-2-1](/Images/Week8/ctf-8-2-1.png "ctf-8-2-1")
+
+- `NX` is `disabled`, which allows `buffer overflow attacks`, since there aren't memory addresses where code execution is blocked.
+- `Pie` is `enabled`, which means that everytime the executable is ran, memory addresses are `randomized`, which makes attacks targetting specific memory addresses more difficult
+
+Our objective is to `call a shell` on the `remote server` in order to obtain the flag (inside the flag.txt file in the working directory)
+
+After analysing the `main.c` file and its protections, we concluded that it is `vulnerable`
+
+- ![ctf-8-2-2](/Images/Week8/ctf-8-2-2.png "ctf-8-2-2")
+
+- The program gives the buffer's address at `runtime`, which can be used to `override` the `return address` with `shellcode` using a buffer overflow attack
+
+The script used to perform the attack was a given script, that `constructs and injects a payload in a specific address`, with some modifications:
+
+- ![ctf-8-2-3](/Images/Week8/ctf-8-2-3.png "ctf-8-2-3")
+
+- ![ctf-8-2-4](/Images/Week8/ctf-8-2-4.png "ctf-8-2-4")
+
+- The buffers' address was read from the output of the executable
+- We received the output until the moment when that address was about to be displayed, and then `read it`, saving the `decimal` value on the variable `buffer` (lines 15-17)
+
+- We opted to put the shellcode in the `end of the payload`, which is `517 bytes long`
+- Because the shellcode is `27` bytes long, `start` is equal to `490` (517-27)
+- `Ret` is equal to the `address of the buffer + 490`. That corresponds to the address where our shellcode is.
+- Finally, `offset` is equal to `108`, counting with the buffer size (100), the ESP size (4) and the EBP size (4) bytes.
+
+With this script we are changing the return address of this function (address = `offset`) to `ret`, which points to the location where our shellcode exists (address = `start + 490`).
+
+After running the script we `launch a shell in the server`, where we are able to get the flag using the `cat flag.txt` command.
+
+
+- ![ctf-8-2-5](/Images/Week8/ctf-8-2-5.png "ctf-8-2-5")
