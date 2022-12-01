@@ -88,6 +88,8 @@
 
 ## CTF 1
 - Since we have access to the file index.php it's easier to notice the vulnerability inside the login query and try to control it.
+- ![LoginCTF8.1](/Images/Week8/LoginQuery-8-1.png "LoginCTF8.1")
+- As showned the login query uses directly the input values from the user which gives us the ability to exploit the sistem.
 - As done in the lab we'll use the `admin';--` as the username inside the website.
 - `admin` is the account name, `'` is used to end the input of that sql field, `;` ends the line in php, `-- ` will comment all sql code afterwards.
 - ![CTF8.1](/Images/Week8/CTF8.1.png "CTF8.1")
