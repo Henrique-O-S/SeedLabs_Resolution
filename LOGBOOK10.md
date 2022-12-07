@@ -37,6 +37,12 @@ After we plant the script we can login as another user, per example Alice. If we
 However, if we check Alice's friends we will find Samy was added:
 - ![alice-friends4](/Images/Week10/Task4-alice-friends.PNG "alice-friends4")
 
+### Question 1
+These lines get the values of the __elgg_ts and __elgg_token parameters, which change every time a page is loaded. Therefore they need to be accessed by the script attack dynamically in order to get the current values.
+
+### Question 2
+No, the Editor mode for the “About me” field would be insufficient to perform the attack. This is because the Editor mode adds extra HTML and filters some of the symbols which would be needed for the script to work.
+
 ## CTFs
 
 ### CTF1
