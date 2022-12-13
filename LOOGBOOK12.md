@@ -34,10 +34,10 @@ Finally if we can look into the decoded content of the X509 certificate and the 
 
 #### In the RSA algorithm, we have a public exponent e, a private exponent d, a modulus n, and two secret numbers p and q, such that n = pq.Please identify the values for these elements in your certificate and key files.
 
-Public expoent - e:
+Public exponent - e:
 - ![e](/Images/Week12/Task1-e.PNG "e")
 
-Private expoent - d:
+Private exponent - d:
 - ![d](/Images/Week12/Task1-d.PNG "d")
 
 Modulus - n:
