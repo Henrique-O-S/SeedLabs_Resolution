@@ -65,3 +65,14 @@ The results can be seen in the server.csr file:
 - ![result](/Images/Week12/Task2-result.PNG "result")
 
 ## Task 3
+
+Firstly, we need to make a copy of the openssl file with the name of myCA_openssl.
+
+Then, we need to turn the certificate signing request (server.csr) into an X509 certificate (server.crt), using the CA’s ca.crt and ca.key. For that we need to edit the copied openssl file to enable 'openssl ca' to copy the extension field:
+- ![extension](/Images/Week12/Task3-extension.PNG "extension")
+
+Only then we can run the command:
+- ![certificate](/Images/Week12/Task3-certificate.PNG "certificate")
+
+After signing the certificate, we can check that the alternative names are not included in the server.crt:
+- ![result](/Images/Week12/Task3-result.PNG "result")
