@@ -48,3 +48,20 @@ p:
 
 q:
 - ![q](/Images/Week12/Task1-q.PNG "q")
+
+## Task 2
+
+Firstly, we need to generate a CSR for our website: 
+- ![generate-CSR](/Images/Week12/Task2-generate-CSR.PNG "generate-CSR")
+
+Now we can look at the decoded content of the CSR and private key files:
+- ![req](/Images/Week12/Task2-req.PNG "req")
+- ![rsa](/Images/Week12/Task2-rsa.PNG "rsa")
+
+Finally, to add two alternative names to the certificate signing request we add the -addtext option to the `openssl req` command:
+- ![alt-names](/Images/Week12/Task2-alt-names.PNG "alt-names")
+
+The results can be seen in the server.csr file:
+- ![result](/Images/Week12/Task2-result.PNG "result")
+
+## Task 3
