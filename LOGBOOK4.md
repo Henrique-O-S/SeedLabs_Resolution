@@ -93,7 +93,7 @@ We found the CVE-2021-34646 for the version 5.4.3 Boster for Wordpress that we c
 
 For the CVE choosen we found the following exploit:
 
-```
+```python
 # Exploit Title: WordPress Plugin WooCommerce Booster Plugin 5.4.3 - Authentication Bypass
 # Date: 2021-09-16
 # Exploit Author: Sebastian Kriesten (0xB455)
