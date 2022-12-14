@@ -17,7 +17,7 @@ Now coming back to the initial directory we can generate a self-signed certifica
 - ![generate-CA](/Images/Week12/Task1-generate-CA.PNG "generate-CA")
 
 Or:
-- ![generate-CA2](/Images/Week10/Task1-generate-CA2.PNG "generate-CA2")
+- ![generate-CA2](/Images/Week12/Task1-generate-CA2.PNG "generate-CA2")
 
 Finally if we can look into the decoded content of the X509 certificate and the RSA key:
 - ![X509](/Images/Week12/Task1-X509.PNG "X509")
