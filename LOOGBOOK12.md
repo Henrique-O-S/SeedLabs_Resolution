@@ -76,3 +76,24 @@ Only then we can run the command:
 
 After signing the certificate, we can check that the alternative names are not included in the server.crt:
 - ![result](/Images/Week12/Task3-result.PNG "result")
+
+## Task 4
+
+Firstly, we need to enable Apache’s ssl module and then enable this site:
+- ![config](/Images/Week12/Task4-config.PNG "config")
+
+Then, we need to start the Apache server:
+- ![start](/Images/Week12/Task4-start.PNG "start")
+
+Now, if we access the site one warning will be presented:
+- ![warning](/Images/Week12/Task4-warning.PNG "warning")
+
+This happens because, while our certificate is being recognized, it is still an untrusted CA.
+
+We can add it to the browser's list in the Security section of Preferences, clicking the button "View Certificates":
+- ![preferences](/Images/Week12/Task4-preferences.PNG "preferences")
+
+- ![certificate](/Images/Week12/Task4-certificate.PNG "certificate")
+
+After this, we can successfully access the site:
+- ![result](/Images/Week12/Task4-result.PNG "result")
