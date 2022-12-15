@@ -97,3 +97,18 @@ We can add it to the browser's list in the Security section of Preferences, clic
 
 After this, we can successfully access the site:
 - ![result](/Images/Week12/Task4-result.PNG "result")
+
+## Task 5
+
+Firstly, we need to create a website to impersonate www.example.com. For this we can change the config file for our already certified website, ww.bank32.com:
+- ![config](/Images/Week12/Task5-config.PNG "config")
+
+We also need to add www.example.com to the hosts file to emulate the result of a DNS cache positing attack:
+- ![hosts](/Images/Week12/Task5-hosts.PNG "hosts")
+
+Now, we can rebuild the docker container, start it up again and access it. However we will find a warning because it uses an certificate that is not valid for www.example.com:
+- ![warning](/Images/Week12/Task5-warning.PNG "warning")
+
+## Task 6
+
+
