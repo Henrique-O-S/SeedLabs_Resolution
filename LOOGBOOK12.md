@@ -120,6 +120,6 @@ Then we need to config the file bank32_apache_ssl.conf to match our new website:
 - ![config](/Images/Week12/Task6-config.PNG "config")
 
 Now, we can rebuild the docker container, start the server up again and access it. This time we will be able access the website without warnings:
-- ![result](/Images/Week12/Task5-result.PNG "result")
+- ![result](/Images/Week12/Task6-result.PNG "result")
 
 We can conclude that this time the Man-In-The-Middle attack was successful, as we have a valid certificate signed by a CA that matches.
