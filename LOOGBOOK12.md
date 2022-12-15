@@ -106,9 +106,20 @@ Firstly, we need to create a website to impersonate www.example.com. For this we
 We also need to add www.example.com to the hosts file to emulate the result of a DNS cache positing attack:
 - ![hosts](/Images/Week12/Task5-hosts.PNG "hosts")
 
-Now, we can rebuild the docker container, start it up again and access it. However we will find a warning because it uses an certificate that is not valid for www.example.com:
+Now, we can rebuild the docker container, start the server up again and access it. However we will find a warning because it uses an certificate that is not valid for www.example.com:
 - ![warning](/Images/Week12/Task5-warning.PNG "warning")
+
+As predicted the PKI defeated the Man-In-The-Middle attack.
 
 ## Task 6
 
+Assuming we have access to a compromised CA, we can repeat what we did in the tasks 2 and 3 and certify our fraudulent website:
+- ![setup](/Images/Week12/Task6-setup.PNG "setup")
 
+Then we need to config the file bank32_apache_ssl.conf to match our new website:
+- ![config](/Images/Week12/Task6-config.PNG "config")
+
+Now, we can rebuild the docker container, start the server up again and access it. This time we will be able access the website without warnings:
+- ![result](/Images/Week12/Task5-result.PNG "result")
+
+We can conclude that this time the Man-In-The-Middle attack was successful, as we have a valid certificate signed by a CA that matches.
