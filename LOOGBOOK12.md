@@ -4,14 +4,13 @@ After having the conatiners up and running we can now start the first task.
 Firstly we need to copy the configuration file openssl.conf to our current directory using `cp "/usr/lib/ssl/openssl.cnf" "/home/seed/Documents/seedlabs/seed-labs/category-crypto/Crypto_PKI/Labsetup"`
 
 Then we create the directory demoCA with the subdirectories certs, crl, and newcerts and the files serial.txt an index.txt using the following batch of commands:
-`   
-    mkdir demoCA
-    ls
-    cd demoCA
-    mkdir certs crl newcerts
-    echo 1000 > serial
-    gedit index.txt
-`
+- `mkdir demoCA`  
+- `ls`
+- `cd demoCA`
+- `mkdir certs crl newcerts`
+- `echo 1000 > serial`
+- `gedit index.txt`
+
 
 Now coming back to the initial directory we can generate a self-signed certificate for our CA using: 
 - ![generate-CA](/Images/Week12/Task1-generate-CA.PNG "generate-CA")
@@ -25,7 +24,8 @@ Finally if we can look into the decoded content of the X509 certificate and the 
 
 #### What part of the certificate indicates this is a CA’s certificate?
 
-- The digital signature in the ca.crt file
+- The field "Certificate Authority" in the section "Basic Constraints".
+- ![question1](/Images/Week12/Task1-question1.PNG "question1")
 
 #### What part of the certificate indicates this is a self-signed certificate?
 
