@@ -1,35 +1,3 @@
-## British Punctuality
-
-## Final Format
-We started by downloading the `program` and running checksec on it:
-
-![Final-1](/Images/Extras/FinalFormat/1.png "1")
-
-Since it has canary and NX we can't use buffer overflow and shellcode, so we need to find another way to get the flag.
-
-Because the `program` requires an input we can try to use a format string vulnerability to leak the flag:
-
-![Final-2](/Images/Extras/FinalFormat/2.png "2")
-
-In order to understand better the `program` we runned inside `gdb` info functions:
-
-![Final-3](/Images/Extras/FinalFormat/3.png "3")
-
-We can see that there's a function called `old_backdoor` that could be our way in. So we analyzed the assembly code of the function:
-
-![Final-4](/Images/Extras/FinalFormat/4.png "4")
-
-To change the return address we need to send a string with the following format:
-
-So now we just need to send the string to the program and we should get the flag.
-
-![Final-5](/Images/Extras/FinalFormat/5.png "5")
-
-```flag{TBD}```
-
-## Echo
-
-
 ## Apply for flag 2
 
 When we open the site we are presented with our `id` for every request needed and there's a input box with a submit button.
